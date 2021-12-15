@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Syndrome Syndrome</title>
+	
+	<style type="text/css">
+		html {margin:0;padding:0;background-color: #EFEFEF; font-size: 16px; }
+		body {margin:0; padding: 0; font-size: em(32); // 32/16 = 2em; font-family: 'TheSeasons-BdIt', 'SpoqaHanSansNeo-Regular'; margin: 0;  }
+		section {margin: 0; padding: 0; display: flex;}
+		* {font-family: inherit; box-sizing: border-box;}
+		div{transition: all 0.3s;}
+
+
+
+
+	/* 폰트 */
+		@font-face{font-family: "TheSeasons-BdIt";
+               src:local(※), url(TheSeasons-BdIt.otf)format("opentype"),
+                  url('TheSeasons-BdIt.woff') format('woff');
+               unicode-range: U+0041-005A, U+0061-007A, U+0030-0039, U+0020-002F, U+003A-0040, U+005B-0060, U+007B-007E}
+		@font-face{font-family: "SpoqaHanSansNeo-Regular";
+               src:local(※), url(SpoqaHanSansNeo-Regular.otf)format("opentype"),
+                  url('SpoqaHanSansNeo-Regular.woff') format('woff');
+               unicode-range:  U+AC00-D7A3}
+
+
+	.main{background-color: #EFEFEF; width: 78.9vw; height: 100vh;}
+	.nav{background-color: #202430; width: 21.1vw; height: 100vh;}
+
+/*메인*/
+	.one{height:13vh; display: flex; border-bottom: black solid 2px;}
+	.two{background-color: #DADEE9;  height: 9.3vh; display: flex;align-items: center; border-bottom: black solid 2px;  font-size: 2em}
+	.three{height: 48.1vh; display: flex; border-bottom: black solid 2px;}
+	.three:hover {height: 48.1vh; display: flex; border-bottom: black solid 2px;}
+	.four{height:29.6vh; display: flex;  align-items: center;}
+
+	.title3{width: 57vw; background: url(titleblack.png) 0 center / 57vw repeat-x;
+		animation:title 2s linear infinite;}
+
+		@keyframes title {
+		0% {background-position: top 0vh center;}
+		100% {background-position: top 80vh center;}
+	}
+
+	#one1{background-color: red;height:13vh; width: 39.5vw; background: url(four1.jpg);}
+	#one1:hover{background-color: red;height:13vh; width: 60vw;background: url(four11.jpg); }
+
+	#one2{background-color: red;height:13vh; width: 39.5vw; background: url(four2.jpg);}
+	#one2:hover {background-color: red;height:13vh; width: 60vw;background: url(four11.jpg); }
+	#one2:hover .kadara{opacity: 1;}
+	#one2:hover .linktext{opacity: 1;}
+	.kadara{opacity: 0; color: white; font-size: 2em;}
+
+	#text3{ width: 21.9vw;  }
+	#text3:hover{ width: 40vw  }
+
+	#text3title{width: 21.9vw;  height: 13.7vh;}
+	#text3title:hover{background-color:#202430;color: white; width: 40vw;  height: 13.7vh;transition: 0s;}
+	#text3contain ~#text3title:hover{width: 21.9vw;  height: 34vh; overflow: scroll; }
+	#text3contain:hover{background-color: #202430; color: white; width: 40vw;  height: 34vh; overflow: scroll;}
+
+	#four1{background-color: red;height:29.6vh; width: 19.7vw; background: url(four1.jpg);background-size: 100%;}
+	#four1:hover{background-color: red;height:29.6vh; width: 50vw;background: url(four1.jpg); background-size: 100%;}
+
+	#four2{background-color: red;height:29.6vh; width: 32.3vw; background: url(four23.png);background-size: 100%;}
+	#four2:hover{background-color: red;height:29.6vh; width: 50vw;background: url(cover2.png); background-size: 100%;}
+	#four2:hover .linktext{opacity: 1;}
+
+	#four3{background-color: red;height:29.6vh; width: 27vw; background: url(bell.png);background-size: 100%;}
+	#four3:hover{background-color: red;height:29.6vh; width: 50vw;background: url(bell.png); background-size: 100%;}
+
+
+
+
+/*나브*/
+	.empty{width: 21.1vw; height: 70.4vh; }
+	.container{ width: 21.1vw; height: 29.6vh;  }
+
+	#con1{padding-left: 10px; width: 21.1vw; height: 8vh; color: #B4BBD1; font-size: 2em}
+	#con1:hover{padding-left: 10px;background-color:#EFEFEF; color:black; width: 21.1vw; height: 8vh; font-size: 2em}
+	#con2{padding-left: 10px;width: 21.1vw; height: 8vh; color: #B4BBD1; font-size: 2em}
+	#con2:hover{padding-left: 10px;background-color:#EFEFEF; color:black; width: 21.1vw; height: 8vh; font-size: 2em}
+	#con3{padding-left: 10px;width: 21.1vw; height: 8vh; color: #B4BBD1; font-size: 2em}
+	#con3:hover{padding-left: 10px;background-color:#EFEFEF; color:black; width: 21.1vw; height: 8vh; font-size: 2em}
+
+
+
+
+.red{background-color: red; }
+.blue{background: blue;  }
+.yellow{background: yellow;}
+
+
+.linktext{opacity:0; background-color: white; width: 5vw; height: 3vw; align-items: center; font-size: 2em;}
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<section>
+		<div class="main">
+			<div class="one">
+				<div style="cursor: pointer;" onclick="location.href='https://lhy7963.github.io/archiving1/';"  id="one1"></div>
+				<div id="one2">
+					<p  style="cursor: pointer;" onclick="location.href='https://lhy7963.github.io/archiving1/';" class="kadara"> <MARQUEE font size="10"behavior="scroll" scrolldelay="-100 " scrollamount=50>"혹시 몰라 혹시 몰라"를 마음 속 혹은 실제 말로 뱉으며 가상의 상황을 자꾸 만들며 가방 안에 물건을 넣는다</MARQUEE> </p>
+				</div>
+			</div>
+			<div class="two">
+				<MARQUEE font size="10"behavior="scroll" scrolldelay="-100 " scrollamount=25>(1)저장 증후군 (2) 대중교통 쪽잠 증후군 (3)저기압 증후군 (4)핸드폰 캡쳐 증후군 (5)바이킹 깔깔 증후군 (6)혹시몰라 증후군 (7)일상 소재 증후군 (8)DM 증후군 (9)구구절절 증후군 (10)우주 증후군 (11)벅차오름 증후군 (12)금방 질림 증후군 (13)영업 증후군 (14)카더라 증후군</MARQUEE>
+			</div>
+			<div class="three">
+				<div class="title3"></div>
+				<div id="text3">
+							<div id="text3title">Exhibition 옥타린: 연(緣)
+								<p>Team Two Hyun</p>
+								<p>Gallary lamer 2022.01.26 - 2022.02.07</p>
+							</div>
+							<div id="text3contain">
+								<p>신드롬 신드롬
+
+								<p>'○○신드롬'이라는 말을 쓰는 경우가 급속도로 늘고 있습니다.
+								어떤 현상이든 '신드롬'이라는 말을 붙여 하나의 병, 혹은 사회 현상처럼 취급하는 것입니다.
+
+								<p>신드롬 연구소에서는 이 현상을 '신드롬신드롬(Syndrome Syndrome)'이라 명명하고 연구했습니다.
+
+								<p>우리는 최근 자주 보이는 14가지의 현상을 신드롬으로써 새롭게 정의하고, 여러분에게 선보이게 되었습니다.
+
+								<p>당신도 이 책에서 소개된 신드롬의 보유자인지 확인해보세요. 그리고 자신만의 신드롬을 만들어보는 재미있는 시간을 보내기를 바랍니다.
+
+								<p>신드롬 연구소
+							</div>
+				</div>
+			</div>
+
+			<div class="four">
+				<div style="cursor: pointer;" onclick="location.href='https://lhy7963.github.io/archiving1/';"  id="four1"></div>
+				<div style="cursor: pointer;" onclick="location.href='https://lhy7963.github.io/archiving1/';" id="four2">
+					
+				</div>
+				<div style="cursor: pointer;" onclick="location.href='https://lhy7963.github.io/archiving1/';"  id="four3"></div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="empty">1</div>
+			<div class="container">]
+				<div style="cursor: pointer;" onclick="location.href='https://lhy7963.github.io/mainfinal/';"  id="con1">Information</div>
+				<div style="cursor: pointer;" onclick="location.href=' https://lhy7963.github.io/archivingfinal/';"  id="con2">Archiving </div>
+				<div style="cursor: pointer;" onclick="location.href='https://lhy7963.github.io/mysyndrome/';"  id="con3">My Syndrome</div>
+			</div>
+		</div>
+			
+	</section>
+		
+
+</body>
+</html>
