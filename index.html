@@ -7,7 +7,7 @@
 	
 	<style type="text/css">
 		html {margin:0;padding:0;background-color: #EFEFEF; font-size: 16px; }
-		body {margin:0; padding: 0; font-size: em(32); // 32/16 = 2em; font-family: 'TheSeasons-BdIt', 'SpoqaHanSansNeo-Regular'; margin: 0;  }
+		body {margin:0; padding: 0; font-size: em(32); // 32/16 = 2em; font-family: 'TheSeasons-BdIt', 'SpoqaHanSansNeo-Regular'; }
 		section {margin: 0; padding: 0; display: flex;}
 		* {font-family: inherit; box-sizing: border-box;}
 		div{transition: all 0.3s;}
@@ -46,6 +46,10 @@
 
 	#one1{background-color: red;height:13vh; width: 39.5vw; background: url(four1.jpg);}
 	#one1:hover{background-color: red;height:13vh; width: 60vw;background: url(four11.jpg); }
+	#one1:hover .maybe{opacity: 1;}
+	#one1:hover .linktext{opacity: 1;}
+
+	.maybe{opacity: 0; color: white; font-size: 2em;}
 
 	#one2{background-color: red;height:13vh; width: 39.5vw; background: url(four2.jpg);}
 	#one2:hover {background-color: red;height:13vh; width: 60vw;background: url(four11.jpg); }
@@ -58,18 +62,22 @@
 
 	#text3title{width: 21.9vw;  height: 13.7vh;}
 	#text3title:hover{background-color:#202430;color: white; width: 40vw;  height: 13.7vh;transition: 0s;}
-	#text3contain ~#text3title:hover{width: 21.9vw;  height: 34vh; overflow: scroll; }
-	#text3contain:hover{background-color: #202430; color: white; width: 40vw;  height: 34vh; overflow: scroll;}
+	#text3contain ~#text3title:hover{width: 21.9vw;  height: 34vh; overflow: scroll hidden;}
+	#text3contain:hover{background-color: #202430; color: white; width: 40vw;  height: 34vh; overflow: scroll hidden;}
 
 	#four1{background-color: red;height:29.6vh; width: 19.7vw; background: url(four1.jpg);background-size: 100%;}
 	#four1:hover{background-color: red;height:29.6vh; width: 50vw;background: url(four1.jpg); background-size: 100%;}
 
-	#four2{background-color: red;height:29.6vh; width: 32.3vw; background: url(four23.png);background-size: 100%;}
-	#four2:hover{background-color: red;height:29.6vh; width: 50vw;background: url(cover2.png); background-size: 100%;}
-	#four2:hover .linktext{opacity: 1;}
+	#four2{background-color: red;height:29.6vh; width: 32.3vw; background: url(viking.png);background-size: 100%;}
+	#four2:hover{background-color: red;height:29.6vh; width: 50vw;background: url(viking.png); background-size: 100%;}
+
 
 	#four3{background-color: red;height:29.6vh; width: 27vw; background: url(bell.png);background-size: 100%;}
-	#four3:hover{background-color: red;height:29.6vh; width: 50vw;background: url(bell.png); background-size: 100%;}
+	#four3:hover{background-color: red;height:29.6vh; width: 50vw;background-size: 100%;}
+	#four3:hover .ball{opacity: 0; color: white; font-size: 2em;}
+	#four3:hover .linktext{opacity: 1;}
+	.ball {opacity: 0; color: white; font-size: 2em;}
+
 
 
 
@@ -99,15 +107,21 @@
 
 
 
+
 	</style>
 </head>
 <body>
 	<section>
 		<div class="main">
 			<div class="one">
-				<div style="cursor: pointer;" onclick="location.href='https://lhy7963.github.io/archiving1/';"  id="one1"></div>
+				<div id="one1">
+					<p  style="cursor: pointer;" onclick="location.href='https://lhy7963.github.io/archiving4/';" class="maybe">
+					<MARQUEE font size="10"behavior="scroll" scrolldelay="-100 " scrollamount=50>"비가 오거나 날씨가 흐릴 때, 환자의 특정 신체 부분에 통증이 있거나 정신적으로 우울한 증상이 생기는 증후군"</MARQUEE> 	
+					</p>
+					
+				</div>
 				<div id="one2">
-					<p  style="cursor: pointer;" onclick="location.href='https://lhy7963.github.io/archiving1/';" class="kadara"> <MARQUEE font size="10"behavior="scroll" scrolldelay="-100 " scrollamount=50>"혹시 몰라 혹시 몰라"를 마음 속 혹은 실제 말로 뱉으며 가상의 상황을 자꾸 만들며 가방 안에 물건을 넣는다</MARQUEE> </p>
+					<p  style="cursor: pointer;" onclick="location.href='https://lhy7963.github.io/archiving9/';" class="kadara"> <MARQUEE font size="10"behavior="scroll" scrolldelay="-100 " scrollamount=50>""어? 잠깐. 방금 그 말 좋은데? 메모 좀 할게." 라며 일상 속에서 자꾸 소재를 찾으려 한다."</MARQUEE> </p>
 				</div>
 			</div>
 			<div class="two">
@@ -120,7 +134,7 @@
 								<p>Team Two Hyun</p>
 								<p>Gallary lamer 2022.01.26 - 2022.02.07</p>
 							</div>
-							<div id="text3contain">
+							<div id="text3contain" class="target">
 								<p>신드롬 신드롬
 
 								<p>'○○신드롬'이라는 말을 쓰는 경우가 급속도로 늘고 있습니다.
@@ -138,11 +152,11 @@
 			</div>
 
 			<div class="four">
-				<div style="cursor: pointer;" onclick="location.href='https://lhy7963.github.io/archiving1/';"  id="four1"></div>
-				<div style="cursor: pointer;" onclick="location.href='https://lhy7963.github.io/archiving1/';" id="four2">
+				<div style="cursor: pointer;" onclick="location.href='https://lhy7963.github.io/archiving8/';"  id="four1" ></div>
 					
-				</div>
-				<div style="cursor: pointer;" onclick="location.href='https://lhy7963.github.io/archiving1/';"  id="four3"></div>
+				<div style="cursor: pointer;" onclick="location.href='https://lhy7963.github.io/archiving7/';" id="four2"></div>
+				<div style="cursor: pointer;" onclick="location.href='https://lhy7963.github.io/archiving2/';"  id="four3"></div>
+
 			</div>
 		</div>
 		<div class="nav">
